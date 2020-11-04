@@ -5,13 +5,15 @@
     </button>
     <div class='collapse navbar-collapse' id='navbarText'>
         <ul class='navbar-nav mr-auto'>
-        <li class='nav-item m-4'>
+        <li class='nav-item m-4 {{app.request.get("_route") == "page_accueil" ? "active" : ""}}'>
             <a class='nav-link' href='{{path("page_accueil")}}'>Menu <span class='sr-only'>(current)</span></a>
         </li>
-        <li class='nav-item m-4'>
+        <li class='nav-item m-4 {{app.request.get("_route") == "page_villes" ? "active" : ""}}'>
+            <a class='nav-link' href='{{path("page_villes")}}'>
             <a class='nav-link' href='{{path("page_villes")}}'>Les villes</a>
         </li>
-        <li class='nav-item m-4'>
+        <li class='nav-item m-4 {{app.request.get("_route") == "page_contact" ? "active" : ""}}'>
+            <a class='nav-link' href='{{path("page_contact")}}'>
             <a class='nav-link' href='{{path("page_contact")}}'>Contact</a>
         </li>
         </ul>
