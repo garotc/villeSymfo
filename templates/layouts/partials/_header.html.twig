@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>{% block title %}Bienvenue {% endblock %}</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+
+        {% block stylesheets %}{% endblock %}
+    
+        <style>
+            *{
+                margin : 0!important;
+                padding : 0!important;
+            }
+
+            footer{
+                position : absolute;
+                bottom : 0px;
+                left : 0px;
+                right : 0px;
+            }
+        </style>
+
+    </head>
+    <body class='container-fluid'>
+ 

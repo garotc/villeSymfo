@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title %}Liste des villes{% endblock %}
+
+
+{% block titreEnValeur %}Affichage de toutes les villes{% endblock %}
+
+{% block body %}
+   {#  <h4>La ville est : {{ville}} // on met le nom de la clef// </h4> #} 
+    {% for ville in villes %}
+        <h4>{{ville}}</h4>
+    {% endfor %}
+
+    <div class='row'><div class='col-6 m-auto'>
+    {{5+5}}</div></div>
+
+    {% set monprenom = "Jean"%}
+    {% set nom = "Bon"%}
+    <h2>test prenom</h2>
+    <p>Je m'appelle {{monprenom}} {{nom}}</p>
+
+{% endblock %}
